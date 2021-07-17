@@ -1,4 +1,4 @@
-
+clear; close all; 
 % define the system variables: 
 T = 0.05;
 % xk = f(xk-1)+vk = xk-1 + Tvkcos(phi{k-1}); yk-1 + Tvk sin(phi{k-1});
@@ -75,7 +75,7 @@ hold on
 
 plot(historyX_k(1, end-P:end), historyX_k(2, end-P:end), 'k-')
 % plot(historyY_k(1, end-P:end).*cos(historyY_k(2, end-P:end)), historyY_k(1, end-P:end).*sin(historyY_k(2, end-P:end)), 'rx')
-plot(historyX_predict(1, end-P:end), historyX_predict(2, end-P:end), 'b--')
+plot(historyX_predict(1, end-P:end), historyX_predict(2, end-P:end), 'b--', 'LineWidth',4)
 xlabel("x coordinate", 'fontsize',12)
 ylabel("y coordinate", 'fontsize',12)
 title("Trajectory of Non-Linear system", 'fontsize',14)
