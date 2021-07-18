@@ -69,7 +69,7 @@ for k = 1:ITER
     historyX_predict(:, k) = xhat_optimal; 
 end
 
-P = 50
+P = 50; 
 figure()
 hold on 
 
