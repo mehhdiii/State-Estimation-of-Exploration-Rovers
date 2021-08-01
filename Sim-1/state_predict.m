@@ -8,7 +8,7 @@ omega = xhat_last(5);
 
 xhat_k = [px+T*vx*cos(phi+T*omega/2); 
     py+T*vx*sin(phi+T*omega/2);
-    phi+T*omega;
+    phi+T*omega; 
     vx;
     omega];
 
